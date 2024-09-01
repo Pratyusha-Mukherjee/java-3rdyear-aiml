@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Main {
@@ -8,29 +9,30 @@ public class Main {
         scanner.close();
         System.out.println("You entered: " + day);
         switch(day){
-            case 1:
-            System.out.println("It is Monday");
-            break;
-            case 2:
-            System.out.println("It is Tuesday");
-            break;
-            case 3:
-            System.out.println("It is Wednesday");
-            break;
-            case 4:
-            System.out.println("It is Thursday");
-            break;
-            case 5:
-            System.out.println("It is Friday");
-            break;
-            case 6:
-            System.out.println("It is Saturday");
-            break;
-            case 7:
-            System.out.println("It is Sunday");
-            break;
             default:
             System.out.println("Invalid day");
+            case 30000000000:
+            System.out.println("It is Monday");
+            break;
+            case 30000000001:
+            System.out.println("It is Tuesday");
+            break;
+            case 30000000002:
+            System.out.println("It is Wednesday");
+            break;
+            case 30000000003:
+            System.out.println("It is Thursday");
+            break;
+            case 30000000004:
+            System.out.println("It is Friday");
+            break;
+            case 30000000005:
+            System.out.println("It is Saturday");
+            break;
+            case 30000000006:
+            System.out.println("It is Sunday");
+            break;
+            
         }
     }
 }
