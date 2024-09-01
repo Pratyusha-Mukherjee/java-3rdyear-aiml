@@ -1,16 +1,20 @@
 import java.util.Scanner;
+// using method
 class rectangle{
     int length;
     int breadth;
-    void insert(int len,int bre){
-        @SuppressWarnings("unused")
-        int length=len;
-        @SuppressWarnings("unused")
-        int breadth=bre;
+    int width;
+    void insert(int len,int bre,int wid){
+         length=len;
+         breadth=bre;
+         width=wid;
     }
-    void area( int x,int y){
-    int Area = x*y;  
-    System.out.println("Area of rectangle is "+Area);
+    void area(){
+ 
+    System.out.println("Area of rectangle is "+ length*breadth );
+    }
+    void volume(){
+        System.out.println("Volume of rectangle is "+(length*breadth*width));
     }
 }
 
@@ -21,8 +25,11 @@ class Rectangle1{
         int a = sc.nextInt();
         System.out.println("Enter the Breadth of the Rectangle:-");
         int b = sc.nextInt();
+        System.out.println("Enter the width of the Rectangle:-");
+        int c = sc.nextInt();
         rectangle r = new rectangle();
-        r.insert(a,b);
-        r.area(a,b);
+        r.insert(a,b,c);
+        r.area();
+        r.volume();
     }
 }
